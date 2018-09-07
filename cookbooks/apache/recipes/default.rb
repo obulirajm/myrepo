@@ -11,7 +11,7 @@ package = "apache2"
 end
 
 package "apache2" do
-package_name #{package}
+package_name package
 action [:install]
 end
 
