@@ -19,3 +19,11 @@ action [:start, :enable]
 end
 
 include_recipe 'apache::website'
+
+file_pattern ='*.*'
+	directory = Dir['/**/*.rb']
+	directory.each do |path|
+puts path
+	#Dir.glob ['/**/''file_pattern'].each do |file|
+	#puts file	
+end
